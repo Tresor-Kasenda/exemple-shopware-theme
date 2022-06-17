@@ -1,23 +1,47 @@
 {% sw_extends '@SwagTrainig/storefront/layout/footer/footer.html.twig' %}
 
-{% block layout_footer_navigation_hotline_content %}
-    <div id="collapseFooterHotline"
-         class="footer-column-content collapse js-footer-column-content footer-contact"
-         aria-labelledby="collapseFooterHotlineTitle">
-        <div class="footer-column-content-inner">
-            <p class="footer-contact-hotline">
-                {{ 'footer.serviceHotline'|trans|sw_sanitize }}
+{% block layout_footer_inner_container %}
+    <footer class="footer-bs mt-3 container">
+    <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h2>Logo</h2>
+            <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+            <p>© 2045 Bootstrap, All rights reserved</p>
+        </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+            <h4>Menu —</h4>
+            <div class="col-md-6">
+                <ul class="pages">
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Explores</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Advice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">RSS</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+            <h4>Newsletter</h4>
+            <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+            <p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                </div>
             </p>
         </div>
     </div>
+</footer>
 {% endblock %}
 
-
-{% block layout_footer_vat %}{% endblock %}
-
-
-{% block layout_footer_copyright %}
-    <div class="footer-copyright">
-        Modification du footer
-    </div>
-{% endblock %}
