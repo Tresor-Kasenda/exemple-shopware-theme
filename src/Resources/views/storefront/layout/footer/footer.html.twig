@@ -1,35 +1,37 @@
 {% sw_extends '@SwagTrainig/storefront/layout/footer/footer.html.twig' %}
 
 {% block layout_footer_inner_container %}
-    <footer class="footer-bs mt-3 container">
+    <footer class="mt-3 container">
     <div class="row">
-        <div class="col-md-3 footer-brand animated fadeInLeft">
+        <div class="col-md-3 footer-brand">
             <h2>Logo</h2>
-            <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-            <p>© 2045 Bootstrap, All rights reserved</p>
+            <p>
+                Suspendisse hendrerit tellus laoreet luctus pharetra.
+                Aliquam porttitor vitae orci nec ultricies.
+                Curabitur vehicula, libero eget faucibus faucibus,
+                purus erat eleifend enim, porta pellentesque ex mi ut sem.
+            </p>
         </div>
-        <div class="col-md-4 footer-nav animated fadeInUp">
-            <h4>Menu —</h4>
-            <div class="col-md-6">
-                <ul class="pages">
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Nature</a></li>
-                    <li><a href="#">Explores</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Advice</a></li>
-                </ul>
-            </div>
+        <div class="col-md-4 footer-nav">
+            <h4>Menu</h4>
+            <ul class="list-group">
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Explores</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Advice</a></li>
+            </ul>
         </div>
-        <div class="col-md-2 footer-social animated fadeInDown">
+        <div class="col-md-2 footer-social">
             <h4>Follow Us</h4>
-            <ul>
+            <ul class="list-group">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">RSS</a></li>
             </ul>
         </div>
-        <div class="col-md-3 footer-ns animated fadeInRight">
+        <div class="col-md-3 footer-ns">
             <h4>Newsletter</h4>
             <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
             <p>
@@ -41,7 +43,14 @@
                 </div>
             </p>
         </div>
+
+        <div class="footer-bottom justify-content-center">
+            {% block layout_footer_copyright %}
+                <div class="justify-content-center"></div>
+            {% endblock %}
+        </div>
     </div>
+
 </footer>
 {% endblock %}
 

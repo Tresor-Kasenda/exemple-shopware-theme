@@ -1,0 +1,2 @@
+# Exemple of footer
+
