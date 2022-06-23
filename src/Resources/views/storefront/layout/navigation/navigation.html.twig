@@ -1,0 +1,16 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+
+{% block layout_main_navigation_menu_home %}
+    {{ parent() }}
+
+    {% set name = page.header.navigation %}
+
+    <a class="nav-link main-navigation-link home-link"
+       href="{{ path('frontend.home.page') }}"
+       itemprop="url"
+       title="">
+        <div class="main-navigation-link-text">
+            <span itemprop="name">About us</span>
+        </div>
+    </a>
+{% endblock %}
